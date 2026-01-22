@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vila Real | A Experiência Definitiva</title>
+    <meta name="description"
+        content="Alta gastronomia em Barueri. Vila Real: Onde a arquitetura encontra o sabor. Reservas exclusivas e delivery premium.">
+    <meta name="theme-color" content="#050505">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader-logo">VILA REAL<span class="dot">.</span></div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">VILA REAL<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#experiencia" class="hover-underline">A Experiência</a></li>
+                <li><a href="#menu" class="hover-underline">Menu Signature</a></li>
+                <li><a href="#localizacao" class="hover-underline">Localização</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="open-reservation" class="btn-primary">Reservar Mesa</button>
+                <div class="hamburger" aria-label="Menu">
+                    <span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#experiencia" class="mobile-link">A Experiência</a>
+            <a href="#menu" class="mobile-link">Menu Signature</a>
+            <a href="#localizacao" class="mobile-link">Localização</a>
+            <a href="#" class="mobile-link action-booking">Reservar Agora</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge-elite fade-in">Vila do Conde • Barueri</span>
+            <h1 class="split-text">A Arquitetura<br>do Sabor Perfeito.</h1>
+            <p class="hero-desc fade-in delay-1">Sinta a perfeição em Barueri. Pizzas e lanches autorais, marmitex executivos de segunda a sábado e a majestosa feijoada para um sábado de elite.</p>
+            <div class="cta-group fade-in delay-2">
+                <a href="#menu" class="btn-primary">Nosso Menu</a>
+                <button class="btn-secondary" id="video-tour-btn">Tour Virtual</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="experiencia" class="section-dark">
+        <div class="container grid-2">
+            <div class="text-block reveal-left">
+                <span class="section-tag">O Legado</span>
+                <h2>O Padrão Vila Real.</h2>
+                <p>No epicentro de Barueri, redefinimos a física da culinária. Cada opção é uma equação resolvida de
+                    sabor, textura e aroma.</p>
+                <ul class="feature-list">
+                    <li><span class="icon">✦</span> Pizzas Lendárias</li>
+                    <li><span class="icon">✦</span> Lanches Artesanais</li>
+                    <li><span class="icon">✦</span> Marmitex, Feijoadas e diversas opções</li>
+                </ul>
+            </div>
+            <div class="image-block reveal-right">
+                <div class="img-wrapper parallax-img">
+                    <img src="assets/vila-real.jpg"
+                        loading="lazy" alt="Ambiente Vila Real">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-menu">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="subtitle">Signature Collection</span>
+                <h2>Obras de Arte Comestíveis</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card-elite reveal-up">
+                    <div class="card-badge">Bestseller</div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop"
+                            loading="lazy" alt="Pizza Trufada">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-top">
+                            <h3>Royal Truffle</h3>
+                            <span class="price">R$ 120</span>
+                        </div>
+                        <p class="ingredients">Mozzarella de búfala, pasta de trufas negras, cogumelos porcini e azeite
+                            trufado.</p>
+                        <button class="btn-add" onclick="openPaymentModal('Royal Truffle', 120)">
+                            Pedir Agora <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-elite reveal-up delay-1">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop"
+                            loading="lazy" alt="Pizza Parma">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-top">
+                            <h3>Barão de Parma</h3>
+                            <span class="price">R$ 115</span>
+                        </div>
+                        <p class="ingredients">Pomodoro San Marzano, presunto Parma 24 meses, rúcula selvagem e grana
+                            padano.</p>
+                        <button class="btn-add" onclick="openPaymentModal('Barão de Parma', 115)">
+                            Pedir Agora <span>+</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card-elite reveal-up delay-2">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-631629e9d11b?q=80&w=1000&auto=format&fit=crop"
+                            loading="lazy" alt="Pizza Burrata">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-top">
+                            <h3>Burrata Gold</h3>
+                            <span class="price">R$ 130</span>
+                        </div>
+                        <p class="ingredients">Base bianca, burrata inteira, tomates confitados, pesto genovês e ouro
+                            24k.</p>
+                        <button class="btn-add" onclick="openPaymentModal('Burrata Gold', 130)">
+                            Pedir Agora <span>+</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="section-info">
+        <div class="container grid-info">
+            <div class="glass-card reveal-left">
+                <h3>Horários Exclusivos</h3>
+                <div class="hours-list">
+                    <div class="h-row"><span>Segunda</span> <span class="time">10:00 – 15:00</span></div>
+                    <div class="h-row"><span>Ter - Sex</span> <span class="time">10-15h & 18-23h</span></div>
+                    <div class="h-row"><span>Sáb - Dom</span> <span class="time">10-15h & 18-23h</span></div>
+                </div>
+            </div>
+
+            <div class="glass-card reveal-right">
+                <h3>Localização Premium</h3>
+                <address>
+                    Av. Francisco Lourenço da Costa, 478<br>
+                    Vila do Conde, Barueri - SP<br>
+                    06445-500
+                </address>
+                <div class="map-actions">
+                    <a href="https://waze.com/ul" target="_blank" class="btn-waze">Ir com Waze</a>
+                    <a href="https://maps.google.com" target="_blank" class="btn-maps">Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="reservation-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>Sua Mesa Aguarda</h3>
+                <p>Reserve sua experiência na Vila Real.</p>
+            </div>
+            <form id="booking-form" class="elite-form">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Nome Completo</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" required placeholder=" ">
+                    <label for="phone">WhatsApp</label>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="date" required placeholder=" ">
+                    </div>
+                    <div class="input-group">
+                        <input type="time" required placeholder=" ">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="" disabled selected>Número de Pessoas</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="6">6 Pessoas</option>
+                        <option value="VIP">Sala VIP (8+)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="payment-modal" class="modal-overlay">
+        <div class="modal-content small-modal">
+            <button class="close-modal-pay">&times;</button>
+            <div class="modal-header">
+                <h3>Finalizar Pedido</h3>
+                <p id="item-name">Pizza Selecionada</p>
+                <h2 id="item-price" class="gold-text">R$ 0,00</h2>
+            </div>
+            <div class="payment-methods">
+                <button class="pay-btn">Apple Pay</button>
+                <button class="pay-btn">Pix Instantâneo</button>
+                <button class="pay-btn">Cartão de Crédito</button>
+            </div>
+            <div class="secure-badge">
+                🔒 Transação Criptografada 256-bit
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h4>VILA REAL.</h4>
+                <p>Gastronomia de Alto Padrão.</p>
+            </div>
+            <div class="footer-newsletter">
+                <p>Entre para o Club Vila Real</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail exclusivo">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="copy">
+            © 2026 Vila Real Inc. Todos os Direitos Reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
