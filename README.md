@@ -10,7 +10,6 @@
 
   <br>
 
-  [Insira um GIF ou Imagem Luxuosa do Site Aqui]
   <p align="center">
     Uma infraestrutura digital desenvolvida para o mercado de luxo (High-End Dining). 
     Combina estética minimalista com um backend robusto capaz de processar 
@@ -47,7 +46,6 @@ Utilizamos uma stack agnóstica focada em velocidade de carregamento (LCP) e *Fi
   <img src="https://img.shields.io/badge/HTML5-Semântico-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-Advanced_Animations-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JS-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/UI/UX-Figma_Inspired-ff69b4?style=for-the-badge&logo=figma&logoColor=white">
 </div>
 
 ---
