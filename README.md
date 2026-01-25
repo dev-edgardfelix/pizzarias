@@ -11,9 +11,7 @@
   <br>
 
   <p align="center">
-    Uma infraestrutura digital desenvolvida para o mercado de luxo (High-End Dining). 
-    Combina estética minimalista com um backend robusto capaz de processar 
-    milhares de transações simultâneas com segurança bancária.
+    Uma infraestrutura digital desenvolvida para o mercado de luxo (High-End Dining).
   </p>
 
   <br>
